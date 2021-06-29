@@ -1,0 +1,71 @@
+/* This CSS is for responsive nature of webpage  */
+ /*  Creating responsive NavBar */
+
+ nav .fas {
+    display: block;
+}
+
+header nav ul {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#check:checked~ul {
+    left: 0%;
+}
+
+#check:checked~#bar_btn .fas:before {
+    content: "\f00d";
+}
+
+nav ul li {
+    margin: 40px 0px;
+}
+
+nav ul li a {
+    font-size: 30px;
+}
+
+.active,
+nav ul li a:hover {
+    color:rgba(0, 0, 0, 0.7);
+    background: none;
+}
+
+header{
+    margin: 0px 30px;
+}
+header #icon{
+    font-size:50px;
+    margin-right: 19rem;
+}
+header>div>button{
+    display: none;
+}
+
+/*Home section */
+
+section #home_text p{
+    font-size:40px;
+    position: relative;
+    top: auto;
+    left: 130px;
+}
+section #food_container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:200px;
+    left: 160px;
+}
+    section #food_container .box{
+    margin: 50px 0px;
+}
